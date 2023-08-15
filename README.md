@@ -1,4 +1,4 @@
-Website link:https://simple-notes-nine.vercel.app/
+Notepad:
 
 
 Developed a dynamic web-based note-taking application using HTML,CSS and React JS components.
