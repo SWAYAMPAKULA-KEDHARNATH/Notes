@@ -8,19 +8,19 @@ const AddNote = ({ handleAddNote }) => {
   const handleChange = (event) => {
     if (characterLimit - event.target.value.length >= 0) {
       setNoteText(event.target.value);
-      setError(""); // Clear any previous errors
+      setError(""); 
     }
   };
 
   const handleSaveClick = () => {
     if (noteText.trim().length === 0) {
-      setError("Please enter a note"); // Display error message for empty note
+      setError("Please enter a note"); 
     } else if (noteText.length > characterLimit) {
-      setError("Note exceeds character limit"); // Display error message for exceeding character limit
+      setError("Note exceeds character limit"); 
     } else {
       handleAddNote(noteText);
       setNoteText("");
-      setError(""); // Clear error if note is valid
+      setError(""); 
     }
   };
 
