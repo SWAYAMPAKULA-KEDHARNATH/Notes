@@ -41,7 +41,7 @@ const AddNote = ({ handleAddNote }) => {
           Save
         </button>
       </div>
-      {error && <div className="error">{error}</div>} {/* Display error message */}
+      {error && <div className="error">{error}</div>} {}
     </div>
   );
 };
